@@ -81,7 +81,7 @@ int writes_search_id(writes* writes_arr, int writes_entries, int in_writer_id)
             ub = mid - 1;
         else if(in_writer_id > writes_arr[mid].writer_id)
             lb = mid + 1;
-    }while((in_writer_id != writes_arr[mid].writer_id) && lb <= ub);
+    }while((in_writer_id != writes_arr[mid].writer_id) && lb < ub);
     //if id is found
     if(in_writer_id == writes_arr[mid].writer_id){
             pos=mid;

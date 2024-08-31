@@ -93,7 +93,7 @@ int author_search(author* author_arr, int author_entries, int in_id)
         else if(in_id > author_arr[mid].writer_id)
             lb = mid + 1;        
     //repeat the process till lb doesn't becomes ub and string is found   
-    }while((in_id != author_arr[mid].writer_id) && lb <= ub);
+    }while((in_id != author_arr[mid].writer_id) && lb < ub);
     //if id is found
     if(in_id == author_arr[mid].writer_id){
         pos=mid;

@@ -78,7 +78,7 @@ int book_search(book* book_arr, int book_entries, char* in_title)
             ub = mid - 1;                          
         else if((strcmp(in_title, book_arr[mid].title))>0)
             lb = mid + 1;                      
-    }while((strcmp(in_title, book_arr[mid].title)!=0) && lb <= ub);
+    }while((strcmp(in_title, book_arr[mid].title)!=0) && lb < ub);
     //if title is found
     if((strcmp(in_title, book_arr[mid].title))==0){
         pos=mid;
