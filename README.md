@@ -69,8 +69,9 @@ Follow the on-screen prompts to add, search, delete, or update book and author r
       <writer_id>
       ...
       ```
-
+  
 - The file paths will be prompted when the program starts. Ensure these files are available in the same directory or provide absolute paths.
+- Examples of input files (books.txt, authors.txt, writes.txt) are provided in the **example files** directory of the repository.
 
 ## 👥 Authors
 
