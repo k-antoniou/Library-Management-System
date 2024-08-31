@@ -6,7 +6,7 @@ The Library Management System is a simple C-based command-line application desig
 
 - **Add Author**: Add new authors to the system.
 - **Add Book**: Add new books to the system.
-- **Search Author**: Search for authors based on their ID and view their details.
+- **Search Author**: Search for authors based on their surnames and view their details.
 - **Search Book**: Search for books based on their title and view their details.
 - **Delete Author**: Remove authors from the system.
 - **Delete Book**: Remove books from the system.
