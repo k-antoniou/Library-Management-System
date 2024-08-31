@@ -145,6 +145,7 @@ int main(int argc, char *argv[]) {
                     perror("Invalid input format");
                     goto cleanup;
                 }
+				writes_pos=-1; //works as a flag
                 for (i = 0; i < author_entries; i++) {
                     if (strcmp(author_arr[i].surname, in_surname) == 0) {
                         printf("Author Information\nID: %d, Surname: %s, Name: %s, Number of Books: %d\n",
@@ -163,7 +164,7 @@ int main(int argc, char *argv[]) {
                             }
                         }
                     }else{
-						printf("Author not found!\n");
+						if(i==author_entries-1 && writes_pos==-1) {printf("Author not found!\n");}
 					}
                 }
                 break;
@@ -182,9 +183,8 @@ int main(int argc, char *argv[]) {
                             }
                         }
                     }
-                } else {
-                    printf("Book not found.\n");
-                }
+                } 
+                
                 break;
 
             case 5: // Delete a writer record
