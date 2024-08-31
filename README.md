@@ -29,7 +29,7 @@ To compile the project, you must have a C compiler (e.g., GCC).
 You can build the project by navigating to the directory containing the source files and running the following command:
 
 ```
-gcc -o library_management main.c file_handling.c book.c author.c writes.c utils.c
+gcc -o library_management main.c book.c author.c writes.c utils.c
 ```
 This command compiles all the source files and links them into an executable named `library_management`.
 
