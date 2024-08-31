@@ -1,0 +1,34 @@
+11
+A Wrinkle In Time
+1892
+7.500000
+Charlotte's Web
+1998
+12.000000
+Mieko and the Fifth Treasure 
+1789
+8.050000
+Murder on The Orient Express
+1934
+41.230000
+Number the Stars
+1932
+6.660000
+Peter Pan
+1549
+5.870000
+The Giver
+1837
+6.000000
+The House On Mango Street
+1381
+7.890000
+The Old Man and the Sea
+1937
+4.000000
+The Outsiders
+1849
+8.000000
+Thirteen Reasons Why
+1947
+20.000000
