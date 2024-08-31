@@ -15,33 +15,62 @@ The Library Management System is a simple C-based command-line application desig
 ## 📁 Files and Structure
 
 - `main.c`: Contains the main function and user interface logic.
-- `data_structures.h`: Defines the data structures used in the project.
-- `file_handling.c` / `file_handling.h`: Functions for reading from and writing to files.
-- `sorting.c` / `sorting.h`: Functions for sorting books and authors.
-- `searching.c` / `searching.h`: Functions for searching books and authors.
-- `utils.c` / `utils.h`: Utility functions including menu display and memory management.
+- `book.c` / `book.h`: Functions for managing book records, including searching, sorting and saving books.
+- `author.c` / `author.h`: Functions for managing author records, including searching, sorting, and saving authors.
+- `writes.c` / `writes.h`: Functions for handling the relationships between authors and their books, such as reading, searching, and saving these relationships.
+- `utils.c` / `utils.h`: Utility functions.
 
 ## 🚀 Getting Started
 
 ### Compilation
 
-To compile the project, you need to have a C compiler (e.g., gcc). You can use the following command to build the application:
+To compile the project, you must have a C compiler (e.g., GCC). 
+
+You can build the project by navigating to the directory containing the source files and running the following command:
+
 ```
-gcc -o library_management main.c file_handling.c sorting.c searching.c utils.c
+gcc -o library_management main.c file_handling.c book.c author.c writes.c utils.c
 ```
 This command compiles all the source files and links them into an executable named `library_management`.
 
 ### Usage
 
-The application is run from the command line and requires three arguments: the filenames for books, authors, and writes.
+The application is run from the command line with the command:
 
 ```
-./library_management <book_file> <author_file> <writes_file>
+./library_management
 ```
-For example
-```
-./library_management books.txt authors.txt writes.txt
-```
+Follow the on-screen prompts to add, search, delete, or update book and author records.
+
+### Notes
+
+- The application requires three files as input. These files should contain existing records of books, authors, and their relationships, respectively.
+    - books.txt
+      ```
+      <total_number_of_books>
+      <book_title>
+      <release_date>
+      <price>
+      ...
+      ```
+    - authors.txt
+      ```
+      <total_number_of_authors>
+      <writer_id>
+      <surname>
+      <name>
+      <num_of_books>
+      ...
+      ```
+    - writes.txt
+      ```
+      <total_number_of_writes>
+      <book_title>
+      <writer_id>
+      ...
+      ```
+
+- The file paths will be prompted when the program starts. Ensure these files are available in the same directory or provide absolute paths.
 
 ## 👥 Authors
 
